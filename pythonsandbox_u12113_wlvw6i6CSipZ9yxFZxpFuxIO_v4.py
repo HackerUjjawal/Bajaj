@@ -1,11 +1,19 @@
-# The answer to this challenge is by using the ...
-# ... filename_prefix="" with the f-string interpolation
-# ... by adding +1 to the index value followed by a space
-# ... the file name becomes: 1 Kingdom Hearts...
-YouTube(playlist[i]).streams.filter(subtype="mp4").first()
-.download(
-  output_path=downloads_dir, 
-  filename_prefix=f"{i+1} "
-)
- 
+url = "https://customer-analytics-34146.my.salesforce-sites.com/services/apexrest/buyStocks"
+headers = {
+    "Content-Type": "application/json",
+    "bfhl-auth": str(2110991923)  
+}
 
+data = {
+    "company": "Bajaj Finserv",
+    "currentPrice": 1571.65,  
+    "accountNumber": 102031000,
+    "githubRepoLink": "https://github.com/HackerUjjawal/Bajaj"  
+}
+
+response = requests.post(url, headers=headers, json=data)
+
+if response.status_code == 200:
+    print("Investment successful!")
+else:
+    print("Error buying stocks:", response.text)

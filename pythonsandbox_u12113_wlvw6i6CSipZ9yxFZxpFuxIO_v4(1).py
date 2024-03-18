@@ -6,8 +6,8 @@ headers = {"Content-Type": "application/json"}
 
 # Replace with your details
 data = {
-    "name": "Your Full Name",
-    "email": "your_colle@example.com",
+    "name": "Ujjawal Tripathi",
+    "email": "ujjawal1923.be21@chitkara.edu.in",
     "rollNumber": 2110991923,  
     "phone": 8709403012  
 }
